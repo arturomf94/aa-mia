@@ -13,7 +13,7 @@ def hanoi(n, from_rod, to_rod, aux_rod):
 	hanoi(n-1, aux_rod, to_rod, from_rod)
 
 
-trials = 50
+trials = 30
 steps = []
 times = []
 for i in range(1, trials + 1):
