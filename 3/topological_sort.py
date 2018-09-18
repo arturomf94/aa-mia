@@ -1,9 +1,5 @@
 import networkx as nx
 
-# G = nx.DiGraph() 
-# G.add_nodes_from(list(range(1,4)))
-# G.add_edges_from([(1,2),(3,2)])
-
 # Return set of nodes with in-degree 0
 def in_degree_0(G):
 	S = []
