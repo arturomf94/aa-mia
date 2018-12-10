@@ -108,4 +108,4 @@ class SimulatedAnnealing:
         plt.legend([line_init, line_min], ['Initial weight', 'Optimized weight'])
         plt.ylabel('Weight')
         plt.xlabel('Iteration')
-plt.show()
+        plt.show()

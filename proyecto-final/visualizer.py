@@ -49,4 +49,4 @@ def animateTSP(history, points):
     ani = FuncAnimation(fig, update, frames=range(0, len(history), key_frames_mult),
                         init_func=init, interval=3, repeat=False)
 
-plt.show()
+    plt.show()
