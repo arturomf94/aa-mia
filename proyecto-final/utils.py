@@ -26,4 +26,4 @@ def nearestNeighbourSolution(dist_matrix):
         nodes_to_visit.remove(node)
         result.append(node)
 
-return result
+    return result
