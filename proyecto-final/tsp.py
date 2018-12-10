@@ -1,4 +1,4 @@
-from nodes_generator import NodeGenerator
+from nodes import NodeGenerator
 from simulated_annealing import SimulatedAnnealing
 
 
