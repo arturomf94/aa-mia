@@ -1,8 +1,8 @@
 import math
 import random
 import matplotlib.pyplot as plt
-import tsp_utils
-import animated_visualizer
+import utils
+import visualizer
 
 
 class SimulatedAnnealing:
