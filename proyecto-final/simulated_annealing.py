@@ -30,8 +30,8 @@ class SimulatedAnnealing:
         self.stopping_iter = stopping_iter
         self.iteration = 1
 
-        self.dist_matrix = tsp_utils.vectorToDistMatrix(coords)
-        self.curr_solution = tsp_utils.nearestNeighbourSolution(self.dist_matrix)
+        self.dist_matrix = utils.vectorToDistMatrix(coords)
+        self.curr_solution = utils.nearestNeighbourSolution(self.dist_matrix)
         self.best_solution = self.curr_solution
 
         self.solution_history = [self.curr_solution]
@@ -99,7 +99,7 @@ class SimulatedAnnealing:
               round((self.initial_weight - self.min_weight) / (self.initial_weight), 4) * 100, '%')
 
     def animateSolutions(self):
-        animated_visualizer.animateTSP(self.solution_history, self.coords)
+        visualizer.animateTSP(self.solution_history, self.coords)
 
     def plotLearning(self):
         plt.plot([i for i in range(len(self.weight_list))], self.weight_list)
