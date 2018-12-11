@@ -104,8 +104,8 @@ class SimulatedAnnealing:
     def plotLearning(self):
         plt.plot([i for i in range(len(self.weight_list))], self.weight_list)
         line_init = plt.axhline(y=self.initial_weight, color='r', linestyle='--')
-        line_min = plt.axhline(y=self.min_weight, color='g', linestyle='--')
-        plt.legend([line_init, line_min], ['Initial weight', 'Optimized weight'])
-        plt.ylabel('Weight')
-        plt.xlabel('Iteration')
+        line_min = plt.axhline(y=self.min_weight, color='b', linestyle='--')
+        plt.legend([line_init, line_min], ['Distancia Inicial', 'Distancia Optimizada'])
+        plt.ylabel('Distancia')
+        plt.xlabel('Iteracion')
         plt.show()
