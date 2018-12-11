@@ -42,7 +42,7 @@ class SimulatedAnnealing:
 
         self.weight_list = [self.curr_weight]
 
-        print('Intial weight: ', self.curr_weight)
+        # print('Intial weight: ', self.curr_weight)
 
     def weight(self, sol):
         '''
@@ -94,9 +94,9 @@ class SimulatedAnnealing:
             self.weight_list.append(self.curr_weight)
             self.solution_history.append(self.curr_solution)
 
-        print('Minimum weight: ', self.min_weight)
-        print('Improvement: ',
-              round((self.initial_weight - self.min_weight) / (self.initial_weight), 4) * 100, '%')
+        # print('Minimum weight: ', self.min_weight)
+        # print('Improvement: ',
+        #       round((self.initial_weight - self.min_weight) / (self.initial_weight), 4) * 100, '%')
 
     def animateSolutions(self):
         visualizer.animateTSP(self.solution_history, self.coords)

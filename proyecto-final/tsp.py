@@ -39,7 +39,7 @@ def main():
         sa = SimulatedAnnealing(nodes, temp, alpha, stopping_temp, stopping_iter)
         initial_solution = sa.curr_solution
         sa.anneal()
-        results.append((sa.min_weight, parameters))
+        results.append((sa.min_weight, sa.iteration, parameters))
 
     print(results)
 
