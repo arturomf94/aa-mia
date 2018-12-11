@@ -16,6 +16,9 @@ def animateTSP(history, points):
     ''' approx 1500 frames for animation '''
     key_frames_mult = len(history) // 1500
 
+    if key_frames_mult == 0:
+        key_frames_mult = len(history)
+
     fig, ax = plt.subplots()
 
     ''' path is a line coming through all the nodes '''
