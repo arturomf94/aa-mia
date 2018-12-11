@@ -48,17 +48,17 @@ def main():
     bf = BruteForce(nodes, initial_solution)
     bf.solve()
 
-    # '''animate'''
-    # sa.animateSolutions()
-    #
-    # '''show the improvement over time'''
-    # sa.plotLearning()
-    #
-    # '''animate (brute force)'''
-    # bf.animateSolutions()
-    #
-    # '''show the improvement over time (brute force)'''
-    # bf.plotLearning()
+    '''animate'''
+    sa.animateSolutions()
+
+    '''show the improvement over time'''
+    sa.plotLearning()
+
+    '''animate (brute force)'''
+    bf.animateSolutions()
+
+    '''show the improvement over time (brute force)'''
+    bf.plotLearning()
 
 
 if __name__ == "__main__":
